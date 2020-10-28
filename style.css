@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+
+body {
+    background-color: #e8e8e8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: 300;
+}
+
+h1 {
+    color: #557571;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+h2 {
+    color: #d49a89;
+    font-weight: 300;
+    font-size: medium;
+}
+
+a {
+    color: #557571;
+    text-decoration: none;
+    font-size: medium;
+}
+
+a:hover {
+    color: #d49a89;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+#profile-picture {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+  
+.text-center {
+    text-align: center;
+}
+
+.button-green {
+    background-color: #557571;
+    border-radius: 4px;
+}
+
+.button-font-color {
+    color: white;
+    padding: 10px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 960px) {
+    /* For a screen < 960px, this CSS will be read */
+    .container {
+      width: 700px;
+    }
+  }
+  @media (max-width: 720px) {
+    /* For a screen < 720px, this CSS will be read */
+    .container {
+      width: 500px;
+    }
+  }
+  @media (max-width: 540px) {
+    /* For a screen < 540px, this CSS will be read */
+    .container {
+      width: 300px;
+    }
+  }
