@@ -16,9 +16,8 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: black;
   font-weight: 300;
-  font-size: medium;
 }
 
 a {
@@ -88,6 +87,11 @@ p {
   display: flex;
   justify-content: space-evenly;
   margin-top: 56px;
+}
+
+#name {
+  position: relative;
+  margin-top: 16%;
 }
 
 /* pictures */
