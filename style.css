@@ -108,9 +108,25 @@ p {
   box-shadow: 6px 6px black;
 }
 
+#gallery {
+  padding: 64px;
+}
+
 .picture {
   height: 50vh;
   border-radius: 2px;
+}
+
+.picture-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.picture-right {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 16px;
 }
 
 /* font awesome icons */
@@ -144,6 +160,14 @@ p {
 
 .biography {
   padding-top: 24px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+#biography-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
 .biography h2 {
@@ -154,7 +178,7 @@ p {
 .biography p {
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 24px;
-  width: 45%;
+  width: 85%;
   text-align: justify;
 }
 
