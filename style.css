@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dorsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
 
 body {
     background-color:#DFB0A5;
@@ -33,7 +36,7 @@ a:hover {
 }
 
 p {
-  color: white;
+  color: black;
 }
 
 .container {
@@ -42,8 +45,8 @@ p {
 }
 
 .wrapper {
-    height: 70vh;
     margin: 0;
+    padding: 32px;
 }
 
 #wrapper-white {
@@ -74,8 +77,8 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: 'Trykker', serif;
+  font-size: 56px;
+  font-family: 'Dorsa', sans-serif;
 }
 
 /* Change the color of links on hover */
@@ -88,7 +91,7 @@ p {
 #header {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 56px;
+  margin-top: 32px;
 }
 
 #name {
@@ -131,6 +134,76 @@ p {
   font-size: 48px;
   margin-top: 16px;
 }
+
+/* Biography */
+
+.biography {
+  padding-top: 24px;
+}
+
+.biography h2 {
+  font-family: 'Dorsa', sans-serif;
+  font-size: 48px;
+}
+
+.biography p {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 24px;
+  width: 45%;
+  text-align: justify;
+}
+
+/* Projects */
+
+.project {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project h2 {
+  font-family: 'Dorsa', sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.project-card {
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 36px;
+  font-family: 'Darker Grotesque', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 6px 6px black;
+}
+
+/* gallery grid */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
