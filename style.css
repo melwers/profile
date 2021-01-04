@@ -108,6 +108,11 @@ p {
   box-shadow: 6px 6px black;
 }
 
+.picture {
+  height: 50vh;
+  border-radius: 2px;
+}
+
 /* font awesome icons */
 
 #icons {
@@ -182,28 +187,6 @@ p {
   border: 2px solid white;
   box-shadow: 6px 6px black;
 }
-
-/* gallery grid */
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
