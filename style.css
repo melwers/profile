@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
 
 body {
-    background-color:#DFB0A5;
+    background-color: #DFB0A5;
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     font-weight: 300;
@@ -15,7 +15,7 @@ body {
 
 h1 {
   color: black;
-  font-size: 150px;
+  font-size: 120px;
   margin: 0;
   font-family: 'DM Serif Display', serif;
 }
@@ -23,6 +23,9 @@ h1 {
 h2 {
   color: black;
   font-weight: 300;
+  font-family: 'Dorsa', sans-serif;
+  font-size: 48px;
+  margin: 0;
 }
 
 a {
@@ -39,18 +42,9 @@ p {
   color: black;
 }
 
-.container {
-  width: 500px;
-  margin: 0 auto;
-}
-
-.wrapper {
-    margin: 0;
-    padding: 32px;
-}
-
-#wrapper-white {
+.wrapper-white {
   background-color: white;
+  border-radius: 8px;
 }
 
 /* .card {
@@ -90,43 +84,38 @@ p {
 
 #header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 32px;
 }
 
 #name {
-  position: relative;
-  margin-top: 16%;
+  margin-top: 160px;
 }
 
 /* pictures */
 
 #profile-picture {
   height: 70vh;
-  border-radius: 2px;
+  border-radius: 4px;
   border: 2px solid #DFB0A5;
   box-shadow: 6px 6px black;
 }
 
 #gallery {
-  padding: 64px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#gallery-background {
+  padding: 64px 0 64px 64px;
+  background-color: #F1ECE5;
 }
 
 .picture {
-  height: 50vh;
-  border-radius: 2px;
-}
-
-.picture-left {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-}
-
-.picture-right {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 16px;
+  height: 32vh;
+  margin: 4px;
 }
 
 /* font awesome icons */
@@ -144,16 +133,11 @@ grid-gap: 16px;
 
 /* subtitle */
 
-#professions {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 #subtitle {
   color:black;
   font-family: 'Dorsa', sans-serif;
   font-size: 48px;
-  margin-top: 16px;
+  margin: 0;
 }
 
 /* Biography */
@@ -184,15 +168,14 @@ grid-gap: 16px;
 
 /* Projects */
 
+#project-background {
+  padding: 64px;
+}
+
 .project {
   display: flex;
   justify-content: space-around;
-}
-
-.project h2 {
-  font-family: 'Dorsa', sans-serif;
-  font-size: 48px;
-  margin: 0;
+  align-content: flex-start;
 }
 
 .project-card {
@@ -216,17 +199,17 @@ grid-gap: 16px;
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
-    }
   }
-  @media (max-width: 720px) {
-    /* For a screen < 720px, this CSS will be read */
-    .container {
-      width: 500px;
-    }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
   }
-  @media (max-width: 540px) {
-    /* For a screen < 540px, this CSS will be read */
-    .container {
-      width: 300px;
-    }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
   }
+}
