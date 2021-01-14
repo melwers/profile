@@ -127,6 +127,10 @@ p {
   height: 32vh;
 }
 
+.picture :hover {
+  opacity: 0.9;
+}
+
 /* font awesome icons */
 
 #icons {
