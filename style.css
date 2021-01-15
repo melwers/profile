@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #DFB0A5;
     font-family: 'Montserrat', sans-serif;
@@ -281,6 +285,47 @@ p {
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 18px;
 }
+
+
+/* button for scrolling back to the top */
+#top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border: 1px solid black;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#top-button i {
+  color: #fff;
+  margin: 0;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#top-button:hover {
+  opacity: 0.7;
+}
+#top-button:hover i {
+  color: #fff;
+  top: 5px;
+}
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
