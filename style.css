@@ -33,9 +33,9 @@ h2 {
 }
 
 a {
-  color: white;
-  text-decoration: none;
-  font-size: medium;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: medium !important;
 }
 
 a:hover {
