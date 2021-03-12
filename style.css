@@ -131,8 +131,9 @@ p {
   height: 32vh;
 }
 
-.picture :hover {
+.picture:hover {
   opacity: 0.9;
+  transition: 0.2s ease-in;
 }
 
 /* font awesome icons */
