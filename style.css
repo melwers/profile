@@ -99,17 +99,16 @@ p {
 /* pictures */
 
 #profile-picture {
-  height: 40vh;
+  height: 56vh;
   border-radius: 4px;
   border: 2px solid #DFB0A5;
   box-shadow: 6px 6px black;
+  margin-bottom: 32px;
 }
 
 #gallery {
-  width: 80%;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
@@ -133,12 +132,12 @@ p {
 }
 
 #gallery-background h2 {
-  margin-left: 64px;
-  margin-top: 56px;
+  padding-top: 64px;
 }
 
 .picture {
   height: 32vh;
+  margin: 0 auto;
 }
 
 .picture:hover {
@@ -172,7 +171,8 @@ p {
 #star {
   color: white;
   font-family: 'Dorsa', sans-serif;
-  font-size: 80px;
+  font-size: 60px;
+  padding: 0;
   margin: 0;
 }
 
@@ -206,7 +206,8 @@ p {
 
 #project-background {
   width: 100%;
-  padding: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   border-bottom: 1px solid white;
 }
 
