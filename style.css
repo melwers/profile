@@ -39,7 +39,8 @@ a {
 }
 
 a:hover {
-  color: #d49a89;
+  color: black !important;
+  text-decoration: overline !important;
 }
 
 p {
@@ -50,16 +51,6 @@ p {
   background-color: #F1ECE5;
   border-radius: 8px;
 }
-
-/* .card {
-  width: 100%;
-  margin: 10px 0 10px 0;
-  padding: 30px;
-  background-color: black;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-} */
-
 
 /* Navbar */
 /* Style the links inside the navigation bar */
@@ -138,12 +129,13 @@ p {
 .picture {
   height: 32vh;
   margin: 0 auto;
+  border-radius: 2px;
 }
 
-.picture:hover {
-  opacity: 0.9;
+/* .picture:hover {
+  opacity: 0.8;
   transition: 0.2s ease-in;
-}
+} */
 
 /* font awesome icons */
 
@@ -157,6 +149,11 @@ p {
 .icon {
   font-size: 24px;
   color:white;
+}
+
+.icon:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
 }
 
 /* subtitle */
@@ -304,7 +301,6 @@ p {
 }
 
 .card button {
-  color:white;
   font-family: 'Darker Grotesque', sans-serif;
   background-color: black;
   border: solid 1px black;
@@ -314,9 +310,18 @@ p {
   transition: opacity 0.3s ease;
 }
 
+.card button:hover {
+  opacity: 0.7;
+}
+
 .card button a {
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 18px;
+}
+
+.card button a:hover {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 
